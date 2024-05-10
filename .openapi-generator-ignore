@@ -27,4 +27,5 @@
 .openapi-generator-ignore
 .travis.yml
 git_push.sh
+pyproject.toml
 setup.cfg
