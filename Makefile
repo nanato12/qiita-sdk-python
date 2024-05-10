@@ -13,7 +13,10 @@ lint:
 
 .PHONY: generate
 generate:
-	npx openapi-generator-cli generate \
+	rm -rf docs
+	rm -rf qiita/v2
+	rm -rf test
+	npx @openapitools/openapi-generator-cli generate \
 		-i qiita-openapi/openapi.yml \
 		-g python \
 		-o . \
