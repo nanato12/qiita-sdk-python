@@ -4,13 +4,14 @@ exclude = '''
 (
     venv
     | .mypy_cache
+    | qiita/v2
 )
 '''
 
 [tool.isort]
 multi_line_output = 3
 include_trailing_comma = true
-skip = ["venv"]
+skip = ["venv", "qiita/v2"]
 
 [tool.mypy]
 explicit_package_bases = true
@@ -20,4 +21,4 @@ disallow_untyped_calls = true
 disallow_untyped_defs = true
 ignore_missing_imports = true
 follow_imports = 'skip'
-exclude = ['^venv/*']
+exclude = ['^venv/*', 'qiita/v2/*']
