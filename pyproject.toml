@@ -1,0 +1,23 @@
+[tool.black]
+line-length = 79
+exclude = '''
+(
+    venv
+    | .mypy_cache
+)
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+skip = ["venv"]
+
+[tool.mypy]
+explicit_package_bases = true
+warn_return_any = true
+no_implicit_optional = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+follow_imports = 'skip'
+exclude = ['^venv/*']
