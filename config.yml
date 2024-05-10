@@ -1,0 +1,3 @@
+additionalProperties:
+  packageName: qiita.v2
+  ignoreFileOverride: .openapi-generator-ignore
