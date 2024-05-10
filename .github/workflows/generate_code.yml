@@ -1,0 +1,40 @@
+name: Generate code
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  openapi-generate-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+          submodules: recursive
+
+      - name: update submodule
+        run: git submodule update --remote --recursive
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: generate python code
+        run: make generate
+
+      - uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Generate Qiita API Client
+          delete-branch: true
+          title: Update Qiita API Client
+          body: Auto generate Qiita API python client
+          reviewers: nanato12
+          labels: auto generate
