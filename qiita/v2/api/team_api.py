@@ -112,7 +112,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "GroupMember",
+            '201': "GroupMember",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -183,7 +183,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "GroupMember",
+            '201': "GroupMember",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -254,7 +254,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "GroupMember",
+            '201': "GroupMember",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -398,7 +398,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -469,7 +469,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -540,7 +540,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -680,7 +680,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Group",
+            '201': "Group",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -747,7 +747,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Group",
+            '201': "Group",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -814,7 +814,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Group",
+            '201': "Group",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -955,7 +955,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1026,7 +1026,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1097,7 +1097,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1237,7 +1237,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Item",
+            '201': "Item",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1304,7 +1304,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Item",
+            '201': "Item",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1371,7 +1371,7 @@ class TeamApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Item",
+            '201': "Item",
         }
         response_data = self.api_client.call_api(
             *_param,

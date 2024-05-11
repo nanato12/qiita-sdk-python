@@ -107,7 +107,7 @@ class UserApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -178,7 +178,7 @@ class UserApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -249,7 +249,7 @@ class UserApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Comment",
+            '201': "Comment",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -389,7 +389,7 @@ class UserApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Item",
+            '201': "Item",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -456,7 +456,7 @@ class UserApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Item",
+            '201': "Item",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -523,7 +523,7 @@ class UserApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "Item",
+            '201': "Item",
         }
         response_data = self.api_client.call_api(
             *_param,
