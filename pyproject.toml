@@ -24,4 +24,4 @@ disallow_untyped_calls = true
 disallow_untyped_defs = true
 ignore_missing_imports = true
 follow_imports = 'skip'
-exclude = ['^venv/*']
+exclude = ['^venv/*', 'qiita/v2/*', 'test/*']
