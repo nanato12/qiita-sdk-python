@@ -26,12 +26,13 @@ jobs:
           pip install -r requirements-dev.txt
           pip install -r requirements.txt
 
-      # - name: Create .pypirc file
-      #   run: |
-      #     echo "[testpypi]" > ~/.pypirc
-      #     echo "username = __token__" >> ~/.pypirc
-      #     echo "password = ${{ secrets.TEST_PYPI_TOKEN }}" >> ~/.pypirc
-      #     cat ~/.pypirc
+      - name: Create .pypirc file
+        run: |
+          # echo "[testpypi]" > ~/.pypirc
+          # echo "username = __token__" >> ~/.pypirc
+          # echo "password = ${{ secrets.TEST_PYPI_TOKEN }}" >> ~/.pypirc
+          # cat ~/.pypirc
+          echo "aa"
 
       - name: Build
         run: |
