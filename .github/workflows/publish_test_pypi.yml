@@ -11,6 +11,9 @@ on:
 jobs:
   test-pypi:
     runs-on: ubuntu-latest
+    environment:
+      name: test-pypi
+      url: https://test.pypi.org/project/qiita-sdk/
     steps:
       - uses: actions/checkout@v3
 

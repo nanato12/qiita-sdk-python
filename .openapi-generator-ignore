@@ -31,3 +31,4 @@ git_push.sh
 pyproject.toml
 setup.cfg
 setup.py
+README.md
