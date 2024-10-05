@@ -11,6 +11,9 @@ on:
 jobs:
   test-pypi:
     runs-on: ubuntu-latest
+    environment:
+      name: test-pypi
+      url: https://test.pypi.org/project/qiita-sdk/
     steps:
       - uses: actions/checkout@v3
 
@@ -36,6 +39,3 @@ jobs:
       - name: Publish Test Pypi
         run: |
           make test-pypi
-        env:
-          TWINE_USERNAME: "__token__"
-          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
