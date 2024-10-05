@@ -7,7 +7,7 @@ on:
       - pyproject.toml
       - requirements-dev.txt
       - requirements.txt
-      - setup.cfg
+      - .github/workflows/lint_python.yml
   push:
     branches:
       - develop
@@ -16,7 +16,7 @@ on:
       - pyproject.toml
       - requirements-dev.txt
       - requirements.txt
-      - setup.cfg
+      - .github/workflows/lint_python.yml
 
 jobs:
   python-lint:
