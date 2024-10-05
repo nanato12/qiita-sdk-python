@@ -24,9 +24,7 @@ jobs:
 
       - name: Create .pypirc file
         run: |
-          echo "[pypi]" > $HOME/.pypirc
-          echo "username = __token__" >> $HOME/.pypirc
-          echo "password = ${{ secrets.TEST_PYPI_TOKEN }}" >> $HOME/.pypirc
+          cp .pypirc ~/
 
       - name: Build
         run: |
@@ -35,3 +33,6 @@ jobs:
       - name: Publish Pypi
         run: |
           make pypi
+        env:
+          TWINE_USERNAME: "__token__"
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
