@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - develop
-      - fix/pypi-ci
     paths:
       - VERSION
       - .github/workflows/publish_test_pypi.yml
