@@ -26,12 +26,12 @@ jobs:
           pip install -r requirements-dev.txt
           pip install -r requirements.txt
 
-      - name: Create .pypirc file
-        run: |
-          echo "[pypi]" > ~/.pypirc
-          echo "username = __token__" >> ~/.pypirc
-          echo "password = ${{ secrets.TEST_PYPI_TOKEN }}" >> ~/.pypirc
-          cat ~/.pypirc
+      # - name: Create .pypirc file
+      #   run: |
+      #     echo "[testpypi]" > ~/.pypirc
+      #     echo "username = __token__" >> ~/.pypirc
+      #     echo "password = ${{ secrets.TEST_PYPI_TOKEN }}" >> ~/.pypirc
+      #     cat ~/.pypirc
 
       - name: Build
         run: |
@@ -40,3 +40,6 @@ jobs:
       - name: Publish Test Pypi
         run: |
           make test-pypi
+        env:
+          TWINE_USERNAME: "__token__"
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
