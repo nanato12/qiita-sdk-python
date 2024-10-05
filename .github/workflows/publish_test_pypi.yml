@@ -7,7 +7,6 @@ on:
       - feature/pypi-gha
     paths:
       - VERSION
-      - .github/workflows/publish_test_pypi.yml
 
 jobs:
   test-pypi:
