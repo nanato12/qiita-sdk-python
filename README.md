@@ -1,5 +1,7 @@
 # qiita-sdk-python
 
+This is the Qiita API v2 library.
+
 ## Requirements
 
 Python 3.8+
