@@ -40,3 +40,6 @@ jobs:
       - name: Publish Test Pypi
         run: |
           make test-pypi
+        env:
+          TWINE_USERNAME: "__token__"
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
