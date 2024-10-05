@@ -6,3 +6,4 @@ setuptools>=70.0.0
 wheel>=0.43.0
 twine>=5.1.0
 python-dotenv>=1.0.1
+twine>=5.1.1
