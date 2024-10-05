@@ -1,18 +1,20 @@
-[tool.black]
+[tool.ruff]
 line-length = 79
-exclude = '''
-(
-    venv
-    | .mypy_cache
-    | qiita/v2
-    | test
-)
-'''
+show-fixes = true
+exclude = ["qiita/v2/**", "test/**"]
 
-[tool.isort]
-multi_line_output = 3
-include_trailing_comma = true
-skip = ["venv", "qiita/v2", "test"]
+[tool.ruff.format]
+docstring-code-format = false
+line-ending = "lf"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
 
 [tool.mypy]
 explicit_package_bases = true
@@ -22,4 +24,4 @@ disallow_untyped_calls = true
 disallow_untyped_defs = true
 ignore_missing_imports = true
 follow_imports = 'skip'
-exclude = ['^venv/*', 'qiita/v2/*', 'test/*']
+exclude = ['^venv/*']
