@@ -33,3 +33,6 @@ jobs:
       - name: Publish Pypi
         run: |
           make pypi
+        env:
+          TWINE_USERNAME: "__token__"
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
