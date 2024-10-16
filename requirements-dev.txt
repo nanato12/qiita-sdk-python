@@ -1,7 +1,7 @@
 ruff==0.6.9
 mypy==1.11.2
 mypy-extensions==1.0.0
-types-requests==2.32.0.20240914
+types-requests==2.32.0.20241016
 setuptools>=70.0.0
 wheel>=0.43.0
 twine>=5.1.0
